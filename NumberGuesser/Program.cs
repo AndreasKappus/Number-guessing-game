@@ -3,7 +3,8 @@ using System;
 namespace NumberGuesser
 {
     class Program
-    {    
+    {
+       
         
         static void Main(string[] args)
         {
@@ -93,24 +94,24 @@ namespace NumberGuesser
 
             // input for user's name
             Console.WriteLine("Enter name below");
-
             string input = Console.ReadLine();
 
-            if (time.Hour < 12)
+
+            if (time.Hour < 12 && time.Hour >= 5) 
             {
-                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", morning, input);
+                
             }
             else if(time.Hour >= 12 && time.Hour < 17)
             {
-                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", noon, input);
+                GreetMessage(noon, input);
             }
             else if(time.Hour >= 17 && time.Hour <= 22)
             {
-                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", evening, input);
+                GreetMessage(evening, input);
             }
             else
             {
-                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", wtf, input);
+                GreetMessage(wtf, input);
             }
 
         }
@@ -122,6 +123,11 @@ namespace NumberGuesser
             Console.ForegroundColor = colour;
             Console.WriteLine(message);
             Console.ResetColor();
+        }
+
+        static void GreetMessage(string time, string name)
+        {
+            Console.WriteLine("{0} {1}, let's play a cheeky number guessing game!", time, name);
         }
 
        static void Hint(int guess, int correctNum)
@@ -137,6 +143,7 @@ namespace NumberGuesser
 
         }
 
+        
         static void SaucyHint(int guess, int correctNum)
         {
             if(guess >= correctNum - 1 && guess <= correctNum + 1)

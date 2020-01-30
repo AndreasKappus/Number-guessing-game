@@ -96,10 +96,9 @@ namespace NumberGuesser
             Console.WriteLine("Enter name below");
             string input = Console.ReadLine();
 
-
             if (time.Hour < 12 && time.Hour >= 5) 
             {
-                
+                GreetMessage(morning, input);
             }
             else if(time.Hour >= 12 && time.Hour < 17)
             {

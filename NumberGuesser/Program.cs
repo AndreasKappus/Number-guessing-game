@@ -8,6 +8,7 @@ namespace NumberGuesser
         //IMPROVEMENTS TO MAKE:
             // maybe change the greeting based on current time (good evening name, that sort of stuff)
 
+            
         
         static void Main(string[] args)
         {
@@ -86,12 +87,37 @@ namespace NumberGuesser
 
         static void Greet()
         {
+            // date time to change message greeting based on current time
+            DateTime time = DateTime.Now;
+            string morning = "Guten Morgen";
+            string noon = "Guten Tag";
+            string evening = "Guten Abend";
+            string wtf = "bloody hell get some sleep! anyway hello ";
+            
+            
+
             // input for user's name
             Console.WriteLine("Enter name below");
 
             string input = Console.ReadLine();
 
-            Console.WriteLine("Guten Tag {0}! let's play a cheeky number guessing game", input);
+            if (time.Hour < 12)
+            {
+                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", morning, input);
+            }
+            else if(time.Hour >= 12 && time.Hour < 17)
+            {
+                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", noon, input);
+            }
+            else if(time.Hour >= 17 && time.Hour <= 22)
+            {
+                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", evening, input);
+            }
+            else
+            {
+                Console.WriteLine("{0} {1}, let's play a cheeky number guessing game", wtf, input);
+            }
+
         }
 
 
@@ -113,6 +139,7 @@ namespace NumberGuesser
             {
                 PrintMessage(ConsoleColor.White, "Go lower!");
             }
+
         }
 
         static void SaucyHint(int guess, int correctNum)
@@ -130,6 +157,5 @@ namespace NumberGuesser
                 PrintMessage(ConsoleColor.DarkCyan, "Getting colder...");
             }
         }
-
     }
 }

@@ -4,8 +4,7 @@ namespace NumberGuesser
 {
     class Program
     {
-       
-        
+
         static void Main(string[] args)
         {
             AppInfo(); // output le game info
@@ -77,8 +76,6 @@ namespace NumberGuesser
 
             // resets text colour
             Console.ResetColor();
-
-           
         }
 
         static void Greet()
@@ -91,7 +88,6 @@ namespace NumberGuesser
             string wtf = "bloody hell get some sleep! anyway hello ";
             
             
-
             // input for user's name
             Console.WriteLine("Enter name below");
             string input = Console.ReadLine();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace NumberGuesser
 {
@@ -20,29 +20,28 @@ namespace NumberGuesser
 
             NumberGuesser();
 
-
-
         }
 
         static void NumberGuesser()
         {
+
+            // would rather keep variable declarations outside of loops
             string prompt;
+            int guess = 0;
+            int correctNum;
+            string numInput;
 
             do
             {
                 Random rand = new Random();
-                int correctNum = rand.Next(1, 10);
-
-
-                // initialise guess variable
-                int guess = 0;
+                correctNum = rand.Next(1, 10);
 
                 Console.WriteLine("Guess a number between 1 and 10!");
 
 
                 while (guess != correctNum)
                 {
-                    string numInput = Console.ReadLine();
+                    numInput = Console.ReadLine();
 
                     if (!int.TryParse(numInput, out guess))
                     {

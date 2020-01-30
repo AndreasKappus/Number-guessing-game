@@ -1,0 +1,10 @@
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\bin\Debug\netcoreapp3.1\NumberGuesser.exe
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\bin\Debug\netcoreapp3.1\NumberGuesser.deps.json
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\bin\Debug\netcoreapp3.1\NumberGuesser.runtimeconfig.json
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\bin\Debug\netcoreapp3.1\NumberGuesser.runtimeconfig.dev.json
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\bin\Debug\netcoreapp3.1\NumberGuesser.dll
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\bin\Debug\netcoreapp3.1\NumberGuesser.pdb
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\obj\Debug\netcoreapp3.1\NumberGuesser.AssemblyInfoInputs.cache
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\obj\Debug\netcoreapp3.1\NumberGuesser.AssemblyInfo.cs
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\obj\Debug\netcoreapp3.1\NumberGuesser.dll
+C:\Users\kappu\Desktop\C#_Stuff\NumberGuesser\obj\Debug\netcoreapp3.1\NumberGuesser.pdb

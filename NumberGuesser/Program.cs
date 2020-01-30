@@ -8,6 +8,7 @@ namespace NumberGuesser
         //IMPROVEMENTS TO MAKE:
             // A GETTING WARMER FEATURE IF GETTING CLOSER TO NUMBER
             // OUTPUT IF NUMBER IS HIGHER OR LOWER THAN USER GUESS
+            // maybe change the greeting based on current time (good evening name, that sort of stuff)
 
 
         

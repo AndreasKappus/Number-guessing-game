@@ -3,12 +3,7 @@ using System;
 namespace NumberGuesser
 {
     class Program
-    {
-
-        //IMPROVEMENTS TO MAKE:
-            // maybe change the greeting based on current time (good evening name, that sort of stuff)
-
-            
+    {    
         
         static void Main(string[] args)
         {

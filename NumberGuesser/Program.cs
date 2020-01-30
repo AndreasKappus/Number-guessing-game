@@ -6,10 +6,7 @@ namespace NumberGuesser
     {
 
         //IMPROVEMENTS TO MAKE:
-            // A GETTING WARMER FEATURE IF GETTING CLOSER TO NUMBER
-            // OUTPUT IF NUMBER IS HIGHER OR LOWER THAN USER GUESS
             // maybe change the greeting based on current time (good evening name, that sort of stuff)
-
 
         
         static void Main(string[] args)
@@ -53,7 +50,8 @@ namespace NumberGuesser
 
                     if (guess != correctNum)
                     {
-                        PrintMessage(ConsoleColor.Red, "ehnt! Wrong answer, please try again!");
+                        SaucyHint(guess, correctNum);
+                        //PrintMessage(ConsoleColor.Red, "ehnt! Wrong answer, please try again!");
                     }
                 }
 
@@ -75,7 +73,7 @@ namespace NumberGuesser
 
             // changing text colour
             Console.ForegroundColor = ConsoleColor.Cyan;
-
+            
 
             // "{}" acts as placeholders for variables, shame uni didn't teach me that
             Console.WriteLine("{0}: Version {1}, created by {2}", appName, version, author);
@@ -105,6 +103,33 @@ namespace NumberGuesser
             Console.ResetColor();
         }
 
-       
+       static void Hint(int guess, int correctNum)
+        {
+            if(guess < correctNum)
+            {
+                PrintMessage(ConsoleColor.White, "Go higher!");
+            }
+            else
+            {
+                PrintMessage(ConsoleColor.White, "Go lower!");
+            }
+        }
+
+        static void SaucyHint(int guess, int correctNum)
+        {
+            if(guess >= correctNum - 1 && guess <= correctNum + 1)
+            {
+                PrintMessage(ConsoleColor.DarkRed, "Thot!");
+            }
+            else if(guess >= correctNum - 3 && guess <= correctNum + 3)
+            {
+                PrintMessage(ConsoleColor.Yellow, "Getting warmer!");
+            }
+            else
+            {
+                PrintMessage(ConsoleColor.DarkCyan, "Getting colder...");
+            }
+        }
+
     }
 }
